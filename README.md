@@ -1,3 +1,4 @@
 # JS-chrome-app
 JS 기초 연습
-12/19 -
+momentum 클론코딩
+
