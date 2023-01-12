@@ -1,3 +1,16 @@
-#body {
+body {
     background-color: beige;
+}
+
+h1 {
+    color: blue;
+    transition: color 0.5s ease-in-out; /* 색상변황 딜레이 주기 */    
+}
+
+.change {
+    color: green;
+}
+
+.h1font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
