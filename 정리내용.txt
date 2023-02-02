@@ -533,3 +533,19 @@ function onLoginSubmit(event){
 
 loginForm.addEventListener("submit", onLoginSubmit);
 
+#4.5
+-local storage 활용하기
+    -browser console에서 localstorage.setItem 실행 후 localstorage의 DB에 새 항목(username)이 생성됨
+    -getItem, removeItem 등 다양한 기능이 있음
+
+-js
+function onLoginSubmit(event){
+    const username = loginInput.value;
+    localStorage.setItem("username", username); //localstorage의 DB에 username을 저장해주는 기능
+};
+
+#4.6
+-localStorage에 username이 있는지 확인
+const usernameData = localStorage.getItem("username");
+console.log(usernameData);
+
