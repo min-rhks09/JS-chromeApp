@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    color: blue;
+    color: rebeccapurple;
     transition: color 0.5s ease-in-out; /* 색상변황 딜레이 주기 */    
 }
 
@@ -11,6 +11,11 @@ h1 {
     color: green;
 }
 
-.h1font{
+.h1font {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hidden {
+    display: none; 
+    /* 이 css 클래스는 화면상에 보이지 않도록 숨기는 역할을 한다 */
 }
