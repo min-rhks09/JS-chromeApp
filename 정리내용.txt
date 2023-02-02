@@ -429,9 +429,6 @@ h1.addEventListener("click", handleTitleClick);
 
 #4.0
 - value 기억시키기
-
-
-#4.1
 - HTML
     <div id="login_form"> <!-- class="login_form" 으로도 사용 가능 -> Cannot read properties of null (reading 'addEventListener')에러발생 class와 id의 차이 알기  -->
         <input type="text" placeholder="내용을 입력하세요" />
@@ -439,9 +436,9 @@ h1.addEventListener("click", handleTitleClick);
     </div>
 
 -JS
-// const loginForm = document.getElementById("login_form");
-// const loginInput = loginForm.querySelector("input");
-// const loginButton = loginForm.querySelector("button");
+ const loginForm = document.getElementById("login_form");
+ const loginInput = loginForm.querySelector("input");
+ const loginButton = loginForm.querySelector("button");
 
 //위의 코드를 더욱 간단히
 const loginInput = document.querySelector("#login_form input");
@@ -455,5 +452,30 @@ function handleLoginButtonClick(){
 };
 
 loginButton.addEventListener("click", handleLoginButtonClick);
+
+
+#4.1
+-html
+    <!-- form을 사용하여 html에서 글자수 제한문 만들기 -->
+    <form id="login_form">
+        <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
+        <button>login</button>
+    </form>
+    <!-- 현재 form이 submit 되어 텍스트 입력시 버튼또는 엔터 입력시 새로고침되는 문제  -->
+
+-js
+const loginInput = document.querySelector("#login_form input");
+const loginButton = document.querySelector("#login_form button");
+
+function handleLoginButtonClick(){
+    const username = loginInput.value;
+    console.log(username);
+};
+
+loginButton.addEventListener("click", handleLoginButtonClick);
+
+- 유효성 검사
+ - 텍스트가 비어있거나 너무 길 경우 버튼 클릭 안되도록 설정
+ 
 
 

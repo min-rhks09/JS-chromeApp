@@ -1,17 +1,12 @@
-// const loginForm = document.getElementById("login_form");
-// const loginInput = loginForm.querySelector("input");
-// const loginButton = loginForm.querySelector("button");
-
-//위의 코드를 더욱 간단히
+const loginForm = document.querySelector("#login_form");
 const loginInput = document.querySelector("#login_form input");
-const loginButton = document.querySelector("#login_form button");
 
-function handleLoginButtonClick(){
-    console.log("hello", loginInput.value)
-    
-    //console.log(loginInput.value) //input창에 입력내용 콘솔에 출력
-    //console.log("btnclick"); //버튼 클릭시 콘솔에 출력
+function onLoginSubmit(event){
+    event.preventDefault();
+    //preventDefault를 이용하여 브라우저가 기본동작을 실행하지 못하도록 막을 수 있음
+    console.log(loginInput.value);
+    //event를 console.log하여 인자들(?)을 확인 할 수있다.
 };
 
-loginButton.addEventListener("click", handleLoginButtonClick);
+loginForm.addEventListener("submit", onLoginSubmit);
 

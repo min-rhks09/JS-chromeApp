@@ -10,10 +10,13 @@
 
 <body>
     <p>JS app 연습 2023</p>
-    <div id="login_form"> <!-- class="login_form" 으로도 사용 가능 -> Cannot read properties of null (reading 'addEventListener')에러발생 class와 id의 차이 알기  -->
-        <input type="text" placeholder="내용을 입력하세요" />
-        <button>login</button>
-    </div>
+        <!-- form을 사용하여 html에서 글자수 제한문 만들기 -->
+        <form id="login_form">
+            <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
+            <button>login</button>
+            <p>최대 15자 입력 가능</p>
+        </form>
+        <!-- 현재 form이 submit 되어 텍스트 입력시 버튼또는 엔터 입력시 새로고침되는 문제  -->
 
     <script src="app.js"></script>
 </body>
