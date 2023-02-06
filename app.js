@@ -12,16 +12,15 @@ function onLoginSubmit(event){
     loginForm.classList.add(HIDDEN_CLASSNAME);
     console.log(username);
     //greeting.innerText = "Hi, " + username;
-    greeting.innerText = `Hi, ${username}`; //윗줄 코드와 똑같이 실행
+    paintGreetings(usernameData);
+};
+
+function paintGreetings(username){
+    greeting.innerText = `Hi, ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 };
 
-function paintGreetings
-
-loginForm.addEventListener("submit", onLoginSubmit);
-
 const usernameData = localStorage.getItem(USERNAME_KEY);
-console.log(usernameData);
 
 if(usernameData === null){
     //form을 보여주기
@@ -29,6 +28,6 @@ if(usernameData === null){
     loginForm.addEventListener("submit", onLoginSubmit);
 }else{
     //greeting 보여주기
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = `Hi, ${usernameData}`;
+    paintGreetings(usernameData);   
 };
+

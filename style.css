@@ -16,6 +16,6 @@ h1 {
 }
 
 .hidden {
-    display: none; 
     /* 이 css 클래스는 화면상에 보이지 않도록 숨기는 역할을 한다 */
+    display: none; 
 }
