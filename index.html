@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>MOMENTUM</title>
 </head>
 
 <body>
     <p>JS app 연습 2023</p>
-        <!-- form을 사용하여 html에서 글자수 제한문 만들기 -->
+    <h2 id="clock">00:00</h2> <!-- 시계 -->
+    <!-- form을 사용하여 html에서 글자수 제한문 만들기 -->
         <form class="hidden" id="login_form">
             <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
             <button>login</button>
             <p>최대 15자 입력 가능</p>
         </form>
+
+
         <h1 id="greeting" class="hidden"></h1>
 
-    <script src="app.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"
 </body>
 </html>
