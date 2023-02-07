@@ -1,5 +1,11 @@
 body {
     background-color: beige;
+    text-align: center;
+}
+
+titlemain {
+    color: black;
+    font-size: 100px;
 }
 
 h1 {
@@ -18,4 +24,10 @@ h1 {
 .hidden {
     /* 이 css 클래스는 화면상에 보이지 않도록 숨기는 역할을 한다 */
     display: none; 
+}
+
+h2{
+    color:rebeccapurple;
+    font-size: 100px;
+    margin: auto;
 }

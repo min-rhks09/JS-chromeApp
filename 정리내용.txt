@@ -636,7 +636,23 @@ myClock(); //페이지 새로고침시 시계가 즉시 실행이 되도록 한�
 setInterval(myClock, 1000); 
 
 #5.2
+- String(),padStart(),setInterval() 사용방법 알기
 - 시계의 모든 부분 두자리수로 만들기, padStart 함수활용
 -padStart
     - 설정한 문자열의길이보다 짧으면 앞부분에 padding을 준다.
     - ex) "1".padStart(2, "0") => "01" 출력, 문자열의 길이가 2보다 짧을 때 문자 앞에 "0"을 추가해줌
+
+#5.3
+const clock = document.querySelector("#clock");
+
+function myClock(){
+    const date = new Date();
+    //const hours = date.getHours(); --> number로 출력이 되기떄문에 string으로 변환 필요
+    const hours = String(date.getHours()).padStart(2,"0");
+    const minutes = String(date.getMinutes()).padStart(2,"0");
+    const seconds = String(date.getSeconds()).padStart(2,"0");
+    clock.innerText = `${hours}:${minutes}:${seconds}`;
+};
+
+myClock(); //페이지 새로고침시 시계가 즉시 실행이 되도록 한다. 이후 setInterval 함수에 의해 1초마다 실행
+setInterval(myClock, 1000); 
