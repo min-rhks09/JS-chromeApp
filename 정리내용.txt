@@ -614,4 +614,29 @@ if(usernameData === null){
 };
 
 #5.0
+- setInterval 함수 사용
+function sayHello(){
+    console.log("hello");
+};
+setInterval(sayHello, 5000); //(호출할 함수, 호출 간격 ms (sayHello함수를 5초마다 실행))
 
+#5.1
+- setTimeout
+setTimeout(sayHello, 5000) //setInterval함수와 같은형태
+
+- 시계
+const clock = document.querySelector("#clock");
+
+function myClock(){
+    const date = new Date();
+    clock.innerText = `${date.getHours()}:${date.getMinutes()}:${always00()}`;
+};
+
+myClock(); //페이지 새로고침시 시계가 즉시 실행이 되도록 한다. 이후 setInterval 함수에 의해 1초마다 실행
+setInterval(myClock, 1000); 
+
+#5.2
+- 시계의 모든 부분 두자리수로 만들기, padStart 함수활용
+-padStart
+    - 설정한 문자열의길이보다 짧으면 앞부분에 padding을 준다.
+    - ex) "1".padStart(2, "0") => "01" 출력, 문자열의 길이가 2보다 짧을 때 문자 앞에 "0"을 추가해줌
