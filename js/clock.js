@@ -9,5 +9,5 @@ function myClock(){
     clock.innerText = `${hours}:${minutes}:${seconds}`;
 };
 
-myClock(); //페이지 새로고침시 시계가 즉시 실행이 되도록 한다. 이후 setInterval 함수에 의해 1초마다 실행
-setInterval(myClock, 1000); 
+myClock(); //페이지 새로고침시 시계가 즉시 실행이 되도록 한다.  
+setInterval(myClock, 1000); //setInterval 함수에 의해 1초마다 실행
