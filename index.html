@@ -10,18 +10,23 @@
 
 <body>
     <p class="titlemain">JS app 연습 2023</p>
+    
     <h2 id="clock">00:00</h2> <!-- 시계 -->
+
     <!-- form을 사용하여 html에서 글자수 제한문 만들기 -->
-        <form class="hidden" id="login_form">
-            <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
-            <button>login</button>
-            <p>최대 15자 입력 가능</p>
-        </form>
+    <form class="hidden" id="login_form">
+        <input required maxlength="15" type="text" placeholder="이름을 입력하세요" />
+        <button>login</button>
+        <p>최대 15자 입력 가능</p>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
 
-
-        <h1 id="greeting" class="hidden"></h1>
-
+    <div id="quotes">
+        <span></span><!-- 명언이 들어가는 부분 -->
+        <span></span><!-- 작가명이 들어가는 부분 -->
+    </div>
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
 </body>
 </html>
