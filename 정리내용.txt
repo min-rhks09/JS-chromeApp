@@ -664,3 +664,17 @@ setInterval(myClock, 1000);
 
 #6.1
 - 배경화면 출력하기
+
+#6.2
+- array에서 랜덤하게 출력하기(Math.random이용)
+
+#7.0
+
+#7.1
+-todolist create
+
+#7.2
+- todolist delete
+- event.target.parentElement
+    -button 클릭 -> event생성 -> target을 button -> button은 부모(li)가 있음(parentElement로 접근)
+    -li.remove()로 li 제거 
