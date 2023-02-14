@@ -9,12 +9,13 @@ function onLoginSubmit(event){
     event.preventDefault();
     //preventDefault를 이용하여 브라우저가 기본동작을 실행하지 못하도록 막을 수 있음
     loginForm.classList.add(HIDDEN_CLASSNAME);
+    const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username); //localstorage의 DB에 username을 저장해주는 기능
     //greeting.innerText = "Hi, " + username;
-    paintGreetings();
+    paintGreetings(username);
 };
 
-function paintGreetings(){
+function paintGreetings(username){
     greeting.innerText = `Hi, ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 };
@@ -27,6 +28,6 @@ if(usernameData === null){
     loginForm.addEventListener("submit", onLoginSubmit);
 }else{
     //greeting 보여주기
-    paintGreetings();   
+    paintGreetings(usernameData);   
 };
 

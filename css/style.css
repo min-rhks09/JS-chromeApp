@@ -1,6 +1,18 @@
 body {
-    background-color: beige;
     text-align: center;
+}
+
+img {
+    /* 불러온 이미지를 배경화면으로 적용하기 */
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
 }
 
 titlemain {
@@ -9,7 +21,7 @@ titlemain {
 }
 
 h1 {
-    color: rebeccapurple;
+    color: yellow;
     transition: color 0.5s ease-in-out; /* 색상변황 딜레이 주기 */    
 }
 
@@ -27,7 +39,7 @@ h1 {
 }
 
 h2{
-    color:rebeccapurple;
+    color:yellow;
     font-size: 100px;
     margin: auto;
 }
