@@ -19,7 +19,10 @@ function deleteList(event){
     const li = event.target.parentElement;
     console.log(li.id);
     li.remove();
-
+    //li.id는 string, todo.id는 number라서 변환 필요, JSON.stringify 또는 parseInt사용
+    //todos =todos.filter((todo) => JSON.stringify(todo.id) !== li.id); 
+    todos =todos.filter((todo) => todo.id !== parseInt(li.id)); 
+    saveToDos();
 };
 
 function paintToDo(newTodo) {
