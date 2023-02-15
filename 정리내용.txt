@@ -686,3 +686,14 @@ setInterval(myClock, 1000);
 #7.4
 - localStorage 항목 새로고침시 화면에 유지 되도록 하기
 JSON.parse() --> stiring을 array 형태로 출력해줌
+
+-forEach
+
+-arrow function
+
+#7.5
+- todo 항목 삭제시 localStorage에서는 지워지지 않는 문제
+
+- todo 항목에서 동일한 항목(=중목항목)을 지울 때 어떤 항목이 지워졌는지 확인할 수 없는 문제
+    -Date.now()를 통해 랜덤 ID를 제공하여 해결
+    

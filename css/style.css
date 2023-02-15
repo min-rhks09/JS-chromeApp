@@ -5,8 +5,8 @@ body {
 img {
     /* 불러온 이미지를 배경화면으로 적용하기 */
     position:absolute;
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vw;
     left: 0px;
     top: 0px;
     right:0px;
