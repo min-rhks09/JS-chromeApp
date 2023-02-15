@@ -719,8 +719,4 @@ JSON.parse() --> stiring을 array 형태로 출력해줌
 - API이용히여 날씨 정보 불러오기
 https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
-API key: 8f742383d8566ba5429b330c8b3c9814
-
- 35.1662616 & 126.861877
-
-https://api.openweathermap.org/data/2.5/weather?lat=35.1662616&lon=126.861877&appid=8f742383d8566ba5429b330c8b3c9814
+- fetch()
