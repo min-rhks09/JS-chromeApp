@@ -44,7 +44,7 @@ const quotes = [
 
 const quote = document.querySelector("#quote span:nth-child(1)"); //first-child, last-child 형식으로도 작성가능
 const author =document.querySelector("#quote span:nth-child(2)");
-
+  
 // quotes array랜덤 출력하기: console.log(quotes[Math.floor(Math.random() * quotes.length)]);
 
 const dailyQuote = quotes[Math.floor(Math.random() * quotes.length)];
