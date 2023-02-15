@@ -2,10 +2,15 @@ const toDoForm = document.getElementById("todo-form");
 const toDoInput = document.querySelector("#todo-form input"); //todo-form 안의 input을 의미
 const toDoList = document.getElementById("todo-list");
 
-const todos = [];
+const TODOS_KEY ="todos"
+
+//todos array 새로고침후에도 유지 되도록 하기
+//const todos = []; //기존 변수는 새로고침후 리스트 작성시 항목을 덮어씌움
+let todos = [];
+
 function saveToDos(){
     //todos array의 항목을 localStorage에 넣어주는 함수
-    localStorage.setItem("todos", JSON.stringify(todos));
+    localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
 };
 
 function deleteList(event){
@@ -42,3 +47,14 @@ function handleToDoSubmit(event) {
 };
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
+
+const savedToDos = localStorage.getItem(TODOS_KEY);
+if(saveToDos !== null){
+    //savedToDos가 null 값이 아닐때 
+    const parsedToDos = JSON.parse(savedToDos);
+    //새로고침 시 항목유지
+    todos = parsedToDos;
+    //array 각 항목에대해서 함수실행 시키기
+    parsedToDos.forEach (paintToDo);
+    //painToDo 역할 함수 (item) => console.log("this is",item), 차이점: 출력위치
+}

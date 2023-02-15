@@ -15,11 +15,6 @@ img {
     opacity:80%;
 }
 
-titlemain {
-    color: black;
-    font-size: 100px;
-}
-
 h1 {
     color: yellow;
     transition: color 0.5s ease-in-out; /* 색상변황 딜레이 주기 */    
@@ -42,4 +37,8 @@ h2{
     color:yellow;
     font-size: 100px;
     margin: auto;
+}
+
+p.titlemain {
+    color:yellow;
 }

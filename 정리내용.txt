@@ -678,3 +678,11 @@ setInterval(myClock, 1000);
 - event.target.parentElement
     -button 클릭 -> event생성 -> target을 button -> button은 부모(li)가 있음(parentElement로 접근)
     -li.remove()로 li 제거 
+
+#7.3 todolist save
+- localStorage 안에선 array의 형태로 저장불가(text로만 저장) 
+    - JSON.stringify()를 이용하여 string 형태로 변환 가능
+
+#7.4
+- localStorage 항목 새로고침시 화면에 유지 되도록 하기
+JSON.parse() --> stiring을 array 형태로 출력해줌
