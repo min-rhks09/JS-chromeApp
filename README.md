@@ -2,7 +2,7 @@
 JS 기초 연습
 <br>클론코딩
 <hr>
-<h2>강의 완성본</h2>
+<h2 align="center">강의 완성본</h2>
 <p align="center">
   <img src="https://i.ibb.co/2dW2hHJ/2023-02-20-20-06-54.png" alt="2023-02-20-20-06-54" border="0" align="center">
 </p>
@@ -17,7 +17,7 @@ JS 기초 연습
   <li>to do list 페이지 별도로 만들기</li>
   <li>로그아웃</li>
 </div>
-<br><br>
+
 <hr>
 <div align="center">
   <h2>**수정 로그**</h2>
