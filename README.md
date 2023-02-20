@@ -5,6 +5,7 @@ JS 기초 연습
 <h2>강의 완성본</h2>
 <a href="https://ibb.co/89N3stk"><img src="https://i.ibb.co/2dW2hHJ/2023-02-20-20-06-54.png" alt="2023-02-20-20-06-54" border="0"></a>
 
-<p>수정해갈 내용</p>
+<h2>수정해갈 내용</2>
 <li>사진파일을 배경화면으로전환</li>
+<li></li>
 <li></li>
