@@ -315,7 +315,7 @@ title.addEventListener("mouseleave", handleMouseLeave);
  2. oneventname
     ex) title.onclick = handleTitleClick;
 
-- 아래에서 가가 두개의 양식은 같은 결과를 출력
+- 아래에서 각자 두 개의 양식은 같은 결과를 출력
 title.addEventListener("click", handleTitleClick);
 // title.onclick = "handleTitleClick";
 
