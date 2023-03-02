@@ -11,7 +11,6 @@ function onLoginSubmit(event){
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username); //localstorage의 DB에 username을 저장해주는 기능
-    //greeting.innerText = "Hi, " + username;
     paintGreetings(username);
 };
 
